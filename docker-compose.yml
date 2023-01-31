@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  privy-api:
+    image: privy-api
+
+    build:
+      dockerfile: ./Dockerfile
+    restart: always
+    ports:
+      - "80:8000"
